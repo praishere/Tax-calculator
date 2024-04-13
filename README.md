@@ -3,7 +3,7 @@
 
 This is a simple tax calculator web application that allows users to calculate their income tax based on their gross annual income, extra income, age group, and applicable deductions.
 
-![Tax Calculator Error](./images/ss1.jpg)
+![Tax Calculator Error](./images/ss1.JPG)
 ![Tax Calculator Input](./images/ss3.jpg)
 ![Tax Calculator Output](./images/ss2.jpg)
 ![Tax Calculator Input](./images/ss5.jpg)
