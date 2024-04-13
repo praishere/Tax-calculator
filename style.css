@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.card{
+    padding: 0;
+    margin: 5px auto;
+    height: 80vh;
+    border: 2px solid rgb(100, 98, 98);
+    color: white;
+    justify-content: center;
+    text-align: center;
+    max-width: 400px;
+    display: flex; /* Add flexbox display */
+    align-items: center; /* Vertically center the content */
+    flex-direction: column; /* Align content in a column */
+}
+
+.heading{
+    text-align: center;
+}
+
+.first, .second, .third{
+    padding: 10px; 
+    color: black;
+    font-weight: bold; 
+}
+
+.four{
+    color: black;
+    font-weight: bold;
+}
+
+.error-icon {
+    display: none;
+    float: right;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn{
+    width: 318px;
+    height: 5vh;
+    background-color: rgb(73, 73, 195);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000; /* Ensure it's on top */
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    z-index: 1001; /* Ensure it's on top of the background */
+    text-align: center;
+    border-radius: 8px; /* Rounded corners for the modal content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.close {
+    cursor: pointer;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: #f00;
+}
+.output-card {
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid rgb(100, 98, 98);
+    color: black;
+    justify-content: center;
+    text-align: center;
+    max-width: 80%;
+    display: flex; 
+    align-items: center; 
+    flex-direction: column; /* Align content in a column */
+}
+
+.card-body {
+    width: 100%;
+    text-align: left;
+}
+.tooltip-icon {
+    margin-left: 5px;
+    position: relative;
+    color: #8c9094; 
+    cursor: pointer;
+}
+
+.tooltip-icon:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 4px;
+    padding: 8px 12px;
+    width: max-content;
+    white-space: normal; /* Wrap the text to multiple lines */
+    line-height: 1.4; /* Adjust line height for better readability */
+    z-index: 1000; /* Ensure tooltip is on top of other elements */
+    max-width: 250px; /* Limit the maximum width of the tooltip box */
+    text-align: left; 
+}
+
+.general-error {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+

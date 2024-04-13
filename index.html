@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <h2 class="heading">Tax Calculator</h2>
+    
+    <form id="taxForm" class="card" action="backend">
+        
+        <div class="first">
+            Enter gross annual Income
+            <i class="fas fa-info-circle tooltip-icon" data-tooltip="Gross annual income refers to your total income before any deductions or taxes."></i>
+            <br>
+            <input type="text" id="income" placeholder="Enter gross annual Income">
+              <span class="error-icon" id="incomeError"><i class="fas fa-question-circle"></i></span>
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        </div>
+        <br>
+        <div class="second">
+            Enter extra Income
+            <i class="fas fa-info-circle tooltip-icon" data-tooltip="Extra income includes any additional income you receive apart from your regular salary or earnings."></i>
+            <br>
+            <input type="text" id="extraIncome" placeholder="Enter extra Income">
+             <span class="error-icon" id="extraIncomeError"><i class="fas fa-question-circle"></i></span>
+        </div>
+        <br>
+        <div class="third">
+            <label>Enter age group</label>
+            <br>
+            <select id="age" name="age">
+                <option value="< 40">< 40</option>
+                <option value="≥40 & <60">≥40 & <60</option>
+                <option value="≥60">≥60</option>
+            </select>
+             <span class="error-icon" id="ageerror"><i class="fas fa-question-circle"></i></span>
+        </div>
+        <br>
+        <div class="four">
+            Enter total applicable deductions
+            <i class="fas fa-info-circle tooltip-icon" data-tooltip="Deductions refer to the amount that can be subtracted from your total income to reduce the taxable income. This includes various expenses and investments."></i>
+            <br>
+            <input type="text" id="deductions" placeholder="Enter total applicable deductions">
+            <span class="error-icon" id="deductionsError"><i class="fas fa-question-circle"></i></span>
+        </div>
+        <br>
+        <div class="general-error" id="generalError" style="display:none;">Input field is mandatory</div>
+        <br>
+        <div><input class="btn" type="submit" value="Submit"></div>
+    </form>
+
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
