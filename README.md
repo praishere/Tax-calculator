@@ -3,12 +3,18 @@
 
 This is a simple tax calculator web application that allows users to calculate their income tax based on their gross annual income, extra income, age group, and applicable deductions.
 
+##Tax Calculator Error
 ![Tax Calculator Error](./images/ss1.JPG)
-![Tax Calculator Input](./images/ss3.jpg)
-![Tax Calculator Output](./images/ss2.jpg)
-![Tax Calculator Input](./images/ss5.jpg)
-![Tax Calculator Output](./images/ss4.jpg)
-![Tax Calculator char input](./images/ss6.jpg)
+##Overall Income more than 8 lakhs
+![Tax Calculator Input](./images/ss3.JPG)
+## Output
+![Tax Calculator Output](./images/ss2.JPG)
+##Overall Income less than 8 lakhs
+![Tax Calculator Input](./images/ss5.JPG)
+##Output
+![Tax Calculator Output](./images/ss4.JPG)
+## Taking char as Input
+![Tax Calculator char input](./images/ss6.JPG)
 
 ## Prerequisites
 
