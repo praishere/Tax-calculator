@@ -10,6 +10,10 @@ This is a simple tax calculator web application that allows users to calculate t
 ![Tax Calculator Output](./images/ss4.JPG)
 ![Tax Calculator char input](./images/ss6.JPG)
 
+## Assumption
+
+I am assumed that when user inputs some character in the fields the user shouldn't be able to press submit button indicating that it's not possible to calculate using characters.
+
 ## Prerequisites
 
 Before running this application, ensure you have the following installed:
